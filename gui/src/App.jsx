@@ -1,20 +1,26 @@
 
 import './App.css';
-import { ProductsCrud } from './views/Admin/ProductsCrud.js';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import { ProductsCrud } from './views/Admin/ProductsCrud.jsx';
 import React from 'react'
 
 export const App = () => {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path='/poducts' Component={ProductsCrud}/>
-        </Switch>
-      </div>
-    </Router>
-    
+  const router = createBrowserRouter([
+    {
+      path:'',
+      element:<Navigate to="/products"/>
+    },
+    {
+      path:'/products',
+      element: <ProductsCrud />
+    }
+  ])
 
+
+
+  return (
+    <RouterProvider router={router} />
   )
 }
 
