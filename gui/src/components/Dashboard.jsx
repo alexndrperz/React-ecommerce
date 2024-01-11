@@ -12,25 +12,25 @@ export const Dashboard = () => {
           </button>
           <section className="anchors-cont">
           <li>
-            <a className='items-cont' >
+            <a href='/' className='items-cont' >
               <span className="material-symbols-outlined item">abc</span>
               {/* <span className="text">Horarios</span> */}
             </a>
           </li>
           <li>
-            <a className='items-cont' >
+            <a href='/' className='items-cont' >
               <span className="material-symbols-outlined item">swipe_up</span>
               {/* <span className="text">Horarios</span> */}
             </a>
           </li>
           <li>
-            <a className='items-cont' >
+            <a href='/' className='items-cont' >
               <span className="material-symbols-outlined item">hide</span>
               {/* <span className="text">Horarios</span> */}
             </a>
           </li>
           <li>
-            <a className='items-cont' >
+            <a href='/' className='items-cont' >
               <span className="material-symbols-outlined item">move_up</span>
               {/* <span className="text">Horarios</span> */}
             </a>
